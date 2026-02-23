@@ -1,0 +1,13 @@
+{
+  "name": "nanodex-plugin",
+  "version": "1.1.0",
+  "description": "Expert-driven skills and agents for code quality, UX review, and developer workflows",
+  "author": {
+    "name": "noodlemind",
+    "url": "https://github.com/noodlemind"
+  },
+  "homepage": "https://github.com/noodlemind/nanodex-marketplace",
+  "repository": "https://github.com/noodlemind/nanodex-marketplace",
+  "license": "MIT",
+  "keywords": ["ux", "design", "review", "agents", "skills", "code-review", "security", "performance", "architecture", "workflow", "planning"]
+}

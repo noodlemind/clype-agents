@@ -107,7 +107,7 @@ After all expert agents complete:
 ### Step 6: Ask What to Fix
 
 If running interactively (no `$ARGUMENTS` specifying fix scope):
-- Use AskUserQuestion: "Which findings should I fix?"
+- Ask the user: "Which findings should I fix?"
 - Options: "All high impact", "All high + medium", "Everything", "Let me pick specific ones"
 
 If `$ARGUMENTS` specifies a fix scope (e.g., "fix all high impact"), proceed automatically.

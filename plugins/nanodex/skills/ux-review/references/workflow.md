@@ -314,7 +314,7 @@ Present findings in a structured table format:
 ## Step 6: Ask What to Fix
 
 **Interactive mode** (user invoked directly):
-- Use AskUserQuestion: "Which findings should I fix?"
+- Ask the user: "Which findings should I fix?"
 - Options: "All high impact", "All high + medium", "Everything", "Let me pick specific ones"
 
 **Non-interactive mode** (`$ARGUMENTS` specifies scope):

@@ -19,7 +19,9 @@ Create a well-structured implementation plan from a feature description. The pla
 ### Step 1: Understand the Request
 
 1. Read the feature description from `$ARGUMENTS` or the user's message
-2. If the description is vague, ask clarifying questions (interactive mode only)
+2. If the description is vague:
+   - **Interactive mode**: ask clarifying questions
+   - **Non-interactive mode**: infer the most likely interpretation and note assumptions in the plan
 3. Identify the type: feature, bug fix, refactor, or improvement
 
 ### Step 2: Explore the Codebase
@@ -91,6 +93,7 @@ date: YYYY-MM-DD
 **Interactive mode** (user invoked directly):
 - Present a summary of the plan
 - Ask if they want to refine, approve, or start implementing
+- If the user chooses "refine", ask which section needs changes, update the plan, and present the summary again
 
 **Non-interactive mode** (invoked by an agent):
 - Return the plan file path for the orchestrating agent to use

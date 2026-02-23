@@ -30,7 +30,9 @@ Perform a comprehensive code review by spawning 3 parallel sub-agents (security,
 1. If `$ARGUMENTS` provides file paths, PR number, or a description, scope to those
 2. If a PR number is provided, run `git diff origin/main...HEAD --name-only` to get changed files
 3. Otherwise, detect changes: run `git diff --name-only HEAD~1` or check staged files
-4. If no changes and no arguments, ask the user for scope (interactive mode only)
+4. If no changes and no arguments:
+   - **Interactive mode**: ask the user for scope
+   - **Non-interactive mode**: return an error stating no reviewable scope was found
 5. Read all in-scope files
 6. Build a shared context summary:
    - Tech stack and framework
